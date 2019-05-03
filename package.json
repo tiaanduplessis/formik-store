@@ -1,0 +1,72 @@
+{
+  "name": "formik-store",
+  "version": "1.0.0",
+  "description": "Persist and populate Formik form using storage of your choice",
+  "main": "dist/formik-store.js",
+  "source": "src/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "postversion": "npm publish",
+    "preversion": "npm run test",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "lint": "standard --fix",
+    "coverage": "jest --coverage",
+    "build": "microbundle -o dist/ --sourcemap false --compress false --jsx React.createElement --format cjs",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false --jsx React.createElement --format cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiaanduplessis/formik-store.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "formik",
+    "persist",
+    "storage",
+    "store",
+    "localstorage",
+    "sessionstorage"
+  ],
+  "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiaanduplessis/formik-store/issues"
+  },
+  "homepage": "https://github.com/tiaanduplessis/formik-store#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "babel-polyfill": "^6.26.0",
+    "formik": "^1.5.4",
+    "jest": "^24.7.1",
+    "microbundle": "^0.11.0",
+    "react": "^16.8.6",
+    "react-basic-error-boundary": "^1.0.0",
+    "react-dom": "^16.8.6",
+    "react-testing-library": "^7.0.0",
+    "standard": "^12.0.1"
+  },
+  "peerDependencies": {
+    "formik": "^1.5.4",
+    "react": "^16.8.6"
+  },
+  "dependencies": {
+    "debounce-promise": "^3.1.0",
+    "object.omit": "^3.0.0",
+    "react-fast-compare": "^2.0.4"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": "dist",
+    "env": {
+      "jest": true,
+      "browser": true
+    }
+  }
+}
