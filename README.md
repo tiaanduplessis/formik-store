@@ -4,7 +4,7 @@
 [![package downloads](https://img.shields.io/npm/dm/formik-store.svg?style=flat-square)](https://npmjs.org/package/formik-store)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![package license](https://img.shields.io/npm/l/formik-store.svg?style=flat-square)](https://npmjs.org/package/formik-store)
-[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/formik-store.svg)](https://greenkeeper.io/)
 
 > Persist and populate Formik form using storage of your choice
 
