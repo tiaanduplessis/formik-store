@@ -57,7 +57,7 @@
     "react": "^16.8.6"
   },
   "dependencies": {
-    "debounce-promise": "^3.1.0",
+    "debounce-promise": "^3.1.2",
     "object.omit": "^3.0.0",
     "react-fast-compare": "^2.0.4"
   },
