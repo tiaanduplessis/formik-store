@@ -52,6 +52,8 @@ export const Signup = () =>
 ```
 
 
+Empty stored state (`{}` or `null`, including JSON-encoded values) is ignored, so the form keeps its initial state without an extra hydration update. Nonempty state is restored even when individual field values are empty.
+
 ## Install
 
 This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
