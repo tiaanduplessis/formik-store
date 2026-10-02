@@ -22,12 +22,9 @@ class FormikStore extends Component {
       }
 
       Promise.resolve(storage.getItem(name)).then(storageState => {
-        if (storageState !== null) {
-          if (typeof storageState === 'object') {
-            formik.setFormikState(storageState)
-          } else if (typeof storageState === 'string') {
-            formik.setFormikState(JSON.parse(storageState))
-          }
+        const state = typeof storageState === 'string' ? JSON.parse(storageState) : storageState
+        if (state && typeof state === 'object' && Object.keys(state).length > 0) {
+          formik.setFormikState(state)
         }
       })
     }
